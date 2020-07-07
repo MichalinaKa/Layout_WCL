@@ -1,0 +1,84 @@
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: $mainfont;
+  background-color: $bodycolor;
+}
+
+@import "_variables.scss";
+
+a {
+  font-size: inherit;
+  text-decoration: inherit;
+  a:visited {
+    color: inherit;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: $mainfont;
+}
+
+p {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $mainfont;
+}
+
+//reset for form
+input,
+label,
+select,
+button,
+textarea {
+  color: $headercolor;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  font-family: inherit;
+}
+
+input:focus {
+  outline: 0;
+}
+
+/* Buttons
+-----------------------------------------------*/
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+header {
+  background-color: $headercolor;
+}
